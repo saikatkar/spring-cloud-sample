@@ -1,4 +1,5 @@
-# spring-cloud-sample
-Sample application developed using netflix oss (eureka,ribbon,zuul,hystrix etc.).
+# Spring-Cloud-Sample
+Sample REST based micro-services developed using netflix oss (eureka,ribbon,zuul,hystrix etc.).
+## Architecture Overview
 
-REST based micro-services sample
+
