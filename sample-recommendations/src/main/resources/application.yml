@@ -1,0 +1,23 @@
+spring:
+  application.name: recommendations
+
+eureka:
+  instance:
+    instance-id: theone
+  client:
+    fetch-registry: true
+    register-with-eureka:  true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      
+      
+server.port: 8000
+
+inventory:
+  ribbon:
+    eureka:
+      enabled: false
+    NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList
+    ServerListRefreshInterval: 1000
+   
+  

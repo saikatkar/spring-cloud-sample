@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: sample-zuul-proxy
+
+server:
+  port: 8999
+
+eureka:
+  instance:
+    instance-id: zuul-one
+  client:
+    fetch-registry: true
+    register-with-eureka:  true
+    registryFetchIntervalSeconds: 5
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      
+      
+zuul:
+  prefix: /api
+  routes:
+    recommendations:
+      path: /recommendations/**
+      service-id: recommendations
+    inventory:
+     path: /inventory/**
+     service-id: inventory
+      
+management:
+  security:
+    enabled: false      
+ 

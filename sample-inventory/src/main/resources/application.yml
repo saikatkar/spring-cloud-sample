@@ -1,0 +1,17 @@
+spring:
+  application.name: inventory
+
+eureka: 
+  instance:
+    instance-id: thethree
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      
+      
+      
+      
+
+server.port: 8003
