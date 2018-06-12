@@ -10,7 +10,8 @@ Following are the urls where the services are running:
 
 eureka-sever -- http://localhost:8761
 sample-recommendations -- http://localhost:8000/recommend (Though this should not be revealed to the outside world.It will be accessed via Zuul)
-sample-inventory -- http://localhost:8003/buy (Though this should not be revealed to the outside world.It will be accessed via Zuul)
+sample-inventory -- http://localhost:8003/buy (Though this should not be revealed to the outside world.It will be accessed via Zuul).
+
 sample-zuul-proxy -- http://localhost:8999/api/recommendations/recommend (To access the sample recommendations service)
 sample-hystrix-dashboard -- http://localhost:9000/hystrix
 
